@@ -106,6 +106,7 @@ class _PropostasPageState extends State<PropostasPage> {
                   decoration: BoxDecoration(
                     gradient: LinearGradient(
                       colors: [
+                        // ignore: deprecated_member_use
                         Colors.black.withOpacity(0.5),
                         Colors.transparent
                       ],

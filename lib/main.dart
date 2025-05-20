@@ -157,6 +157,8 @@ class SectionTitle extends StatelessWidget {
 }
 
 class AnimatedBanner extends StatelessWidget {
+  const AnimatedBanner({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -169,6 +171,7 @@ class AnimatedBanner extends StatelessWidget {
         borderRadius: BorderRadius.circular(20),
         boxShadow: [
           BoxShadow(
+            // ignore: deprecated_member_use
             color: Colors.red.withOpacity(0.2),
             blurRadius: 10,
             offset: const Offset(0, 6),
@@ -276,6 +279,7 @@ class _EventCardState extends State<EventCard> with SingleTickerProviderStateMix
           width: 300,
           child: Card(
             elevation: 6,
+            // ignore: deprecated_member_use
             shadowColor: Colors.red.withOpacity(0.4),
             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
             color: Colors.white,
